@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Велосипедный подбор</title>
+    <meta name="description" content="Приложение для подбора велосипеда">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Подбор велосипеда</h1>
+            <p>Ответьте на несколько вопросов, и мы подберём идеальный велосипед для вас!</p>
+        </header>
+
+        <main>
+            <div id="question-container" class="question-container">
+                <!-- Вопросы будут загружаться здесь динамически -->
+            </div>
+
+            <div id="result-container" class="result-container hidden">
+                <h2>Рекомендуемый велосипед</h2>
+                <div id="bike-result"></div>
+                <button id="restart-btn" class="btn">Начать заново</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>PWA приложение для подбора велосипеда © 2023</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
